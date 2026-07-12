@@ -1,14 +1,12 @@
-import recursion.PrintNames;
-import recursion.PrintNumbers;
-import recursion.SumOfNumbers;
+import recursion.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
-
-   Scanner sc = new Scanner(System.in);
-   System.out.println("Enter number:");
-   int n=sc.nextInt();
+   int arr[]={1,2,3,4};
+//   Scanner sc = new Scanner(System.in);
+//   System.out.println("Enter number:");
+//   int n=sc.nextInt();
 
    //print names N times
 //   PrintNames printNames = new PrintNames();
@@ -20,5 +18,12 @@ void main() {
 
    //sum of N natural numbers
 //   SumOfNumbers  s=new SumOfNumbers();
-//   s.sum_of_numbers(n,0);
+//   System.out.println(s.sum_of_numbers(n));
+
+   //Factorial N
+//   Factorial fact = new Factorial();
+//   System.out.println(fact.factorial(n));
+//   ReverseArray reverseArray=new ReverseArray();
+//   reverseArray.reverse(arr,0);
+   System.out.println(Arrays.toString(arr));
 }
