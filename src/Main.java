@@ -3,7 +3,7 @@ import recursion.*;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
-   int arr[]={1,2,3,4};
+   String name = "malayalam";
 //   Scanner sc = new Scanner(System.in);
 //   System.out.println("Enter number:");
 //   int n=sc.nextInt();
@@ -25,5 +25,10 @@ void main() {
 //   System.out.println(fact.factorial(n));
 //   ReverseArray reverseArray=new ReverseArray();
 //   reverseArray.reverse(arr,0);
-   System.out.println(Arrays.toString(arr));
+   ReverseString reverseString = new ReverseString();
+   boolean value = reverseString.reverse(name,0,name.length()-1);
+   if(value)
+      System.out.println("True");
+   else
+      System.out.println("false");
 }
