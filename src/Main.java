@@ -1,9 +1,8 @@
 import recursion.*;
-
+import Hashing.*;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
-   String name = "malayalam";
 //   Scanner sc = new Scanner(System.in);
 //   System.out.println("Enter number:");
 //   int n=sc.nextInt();
@@ -25,10 +24,25 @@ void main() {
 //   System.out.println(fact.factorial(n));
 //   ReverseArray reverseArray=new ReverseArray();
 //   reverseArray.reverse(arr,0);
-   ReverseString reverseString = new ReverseString();
-   boolean value = reverseString.reverse(name,0,name.length()-1);
-   if(value)
-      System.out.println("True");
-   else
-      System.out.println("false");
+
+   //ReverseString
+//   ReverseString reverseString = new ReverseString();
+//   boolean value = reverseString.reverse(name,0,name.length()-1);
+//   if(value)
+//      System.out.println("True");
+//   else
+//      System.out.println("false");
+
+
+   //Fibonacci Series
+//   FibonacciSeries fib = new FibonacciSeries();
+//   fib.fibonacci(5,0,1);
+
+
+   //Hashing
+CountingFrequencies freq = new CountingFrequencies();
+int[] testArray = {4, 5, 4, 4, 8, 5, 2};
+System.out.println(freq.countFrequencies(testArray));
+
+
 }
