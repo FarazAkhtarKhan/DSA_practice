@@ -40,9 +40,13 @@ void main() {
 
 
    //Hashing
-CountingFrequencies freq = new CountingFrequencies();
+//CountingFrequencies freq = new CountingFrequencies();
 int[] testArray = {4, 5, 4, 4, 8, 5, 2};
-System.out.println(freq.countFrequencies(testArray));
+//System.out.println(freq.countFrequencies(testArray));
 
+    //MaxFrequency
+    FrequentElement fr = new FrequentElement();
+    int result = fr.mostFrequentElement(testArray);
+    System.out.println(result);
 
 }
