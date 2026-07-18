@@ -2,8 +2,8 @@ package sorting;
 
 public class BubbleSort {
     public int[] bubbleSort(int[] nums) {
-        boolean didSwap = false;
         for(int i=0; i<nums.length-1; i++){
+            boolean didSwap = false;
             for(int j=0;j < nums.length-1-i;j++){
                 if(nums[j]>nums[j+1]){
                     int temp = nums[j];
@@ -12,7 +12,7 @@ public class BubbleSort {
                     didSwap = true;
                 }
             }
-            if(didSwap == false) {
+            if(!didSwap) {
                 break;
             }
         }
