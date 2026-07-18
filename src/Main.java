@@ -1,3 +1,4 @@
+import Sorting.SelectionSort;
 import recursion.*;
 import Hashing.*;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -41,12 +42,19 @@ void main() {
 
    //Hashing
 //CountingFrequencies freq = new CountingFrequencies();
-int[] testArray = {4, 5, 4, 4, 8, 5, 2};
+int[] testArray = {13,46,24,13,20,9};
 //System.out.println(freq.countFrequencies(testArray));
 
     //MaxFrequency
-    FrequentElement fr = new FrequentElement();
-    int result = fr.mostFrequentElement(testArray);
-    System.out.println(result);
+//    FrequentElement fr = new FrequentElement();
+//    int result = fr.mostFrequentElement(testArray);
+//    System.out.println(result);
 
+
+
+    //Selection Sort
+
+    SelectionSort sort = new SelectionSort();
+    sort.selectionSort(testArray);
+    System.out.println(Arrays.toString(testArray));
 }

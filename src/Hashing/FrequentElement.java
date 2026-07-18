@@ -26,15 +26,16 @@ public class FrequentElement {
 
         HashMap<Integer,Integer> ele_freq = new HashMap<Integer, Integer>();
         int maxCount = 0;
-
+        int maxElement = nums[0];
         for(int num : nums){
             //this check if number exists if not put it to zero, if its there increment the value to 1
             int currentCount = ele_freq.getOrDefault(num,0) + 1;
             ele_freq.put(num, currentCount);
             if(currentCount > maxCount){
                 maxCount = currentCount;
+                maxElement = num;
             }
         }
-        return maxCount;
+        return maxElement;
     }
 }
