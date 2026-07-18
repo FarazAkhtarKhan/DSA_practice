@@ -1,4 +1,4 @@
-package Hashing;
+package hashing;
 import java.util.*;
 public class FrequentElement {
     public int mostFrequentElement(int[] nums) {
