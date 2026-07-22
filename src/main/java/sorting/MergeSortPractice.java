@@ -1,6 +1,6 @@
 package sorting;
 
-public class MergeSort {
+public class MergeSortPractice {
     public int[] merge_sort() {
         int arr[] = {2, 3, 5};
         int arr2[] = {4, 7, 8};
